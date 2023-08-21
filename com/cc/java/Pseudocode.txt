@@ -1,0 +1,43 @@
+int main ()
+{
+    int zahl_1;
+    int zahl_2;
+
+    zahl_2  = 0;
+    for (zahl_1 = 1, zahl_1 < 10; zahl_1++)
+    {
+        zahl_2 = zahl_2 + zahl_1;
+    }
+    if (zahl_2 > 30)
+    {
+        zahl_2 = zahl_2 * 2;
+    }
+    else
+    {
+        zahl_2 = zahl_2 * 3;
+    }
+
+    return 0;
+}
+
+Als Pseudocode:
+
+PROGRAMMSTART
+
+FESTLEGEN zahl_1 ALS Ganzzahl
+FESTLEGEN zahl_2 ALS Ganzzahl
+
+zahl_2 := 0
+
+FÜR zahl_1 := 1 BIS 9 MIT SCHRITTWEITE 1
+    zahl_2 := zahl_2 + zahl_1
+ENDE FÜR
+
+FALLS zahl_2 > 30 DANN
+    zahl_2 := zahl_2 * 2
+ENDE FALLS
+SONST 
+    zahl_2 := zahl_2 * 3
+ENDE SONST
+
+PROGRAMMENDE
